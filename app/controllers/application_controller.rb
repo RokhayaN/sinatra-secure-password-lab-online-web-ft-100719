@@ -40,6 +40,7 @@ class ApplicationController < Sinatra::Base
     ##your code here
     user = User.find_by(:username params[:username])
     if user 
+      redirect ""
   end
 
   get "/failure" do
